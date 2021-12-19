@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import NavBar from '../components/NavBar'
 import LandingCover from '../components/LandingCover'
 import MovieList from '../components/MovieList'
-import MovieListReg from '../components/MovieListReg'
+
 
 export default function Home() {
   return (

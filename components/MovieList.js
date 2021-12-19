@@ -11,8 +11,8 @@ const MovieList = (props) => {
       url: 'https://advanced-movie-search.p.rapidapi.com/discover/movie',
       params: {with_genres: '80', page: '1'},
       headers: {
-        'x-rapidapi-host': 'advanced-movie-search.p.rapidapi.com',
-        'x-rapidapi-key': 'e02f53149cmshb8c3e468fb82839p1aa0b2jsncacbf50900a0'
+        'x-rapidapi-host': process.env.NEXT_PUBLIC_API_HOST,
+        'x-rapidapi-key': process.env.NEXT_PUBLIC_API_KEY
       }
     };
     
