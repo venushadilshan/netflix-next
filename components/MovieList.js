@@ -437,10 +437,10 @@ const MovieList = (props) => {
 
   return (<div className="container -mt-44 ">
     
-    <div className="mt-44 h-full bg-cover bg-center opacity-80 absolute w-full "  style={{backgroundImage: "url('https://image.tmdb.org/t/p/original/z8CExJekGrEThbpMXAmCFvvgoJR.jpg')"}}>
+    <div className="mt-44 h-full bg-cover bg-start bg-repeat opacity-80 absolute w-full "  style={{backgroundImage: "url('https://image.tmdb.org/t/p/original/z8CExJekGrEThbpMXAmCFvvgoJR.jpg')"}}>
       </div>
     
-    <div className="flex flex-row">
+    <div className="flex flex-row " >
       <h1 className="text-slate-50 ml-44 text-2xl font-bold mb-5">{props.sectionName}</h1></div>
 
     <div className="flex flex-row  justify-center overflow-x-auto  w-screen flex-shrink-0  swipe flex-wrap ">
@@ -451,16 +451,7 @@ const MovieList = (props) => {
       ))}
     
   </div>
-  <div className="flex flex-row">
-      <h1 className="text-slate-50 ml-5 text-2xl font-bold mb-5">Must Watch</h1></div>
-  <div className="flex flex-row overflow-x-auto  w-screen flex-shrink-0  swipe ">
-
-    
-{/* {movieList.map((item) => (
-<MovieCard movieName={item.title} movieCover={item.backdrop_path}/>
-))} */}
-
-</div>
+  
   </div>);
 }
 
