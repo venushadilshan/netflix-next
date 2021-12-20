@@ -437,7 +437,7 @@ const MovieList = (props) => {
 
   return (<div className="container -mt-44 ">
     
-    <div className="mt-44 h-full bg-cover bg-center opacity-80 absolute w-full "  style={{backgroundImage: "url('https://wallpaperaccess.com/full/2443439.jpg')"}}>
+    <div className="mt-44 h-full bg-cover bg-center opacity-80 absolute w-full "  style={{backgroundImage: "url('https://image.tmdb.org/t/p/original/z8CExJekGrEThbpMXAmCFvvgoJR.jpg')"}}>
       </div>
     
     <div className="flex flex-row">
