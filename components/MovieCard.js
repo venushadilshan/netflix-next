@@ -1,5 +1,6 @@
 import { loadGetInitialProps } from "next/dist/shared/lib/utils";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 const MovieCard = (props) => {
    
     
@@ -20,11 +21,17 @@ useEffect(() => {
     return (
 
 
-        <div className={" flex flex-col m-5 rounded  flex-shrink-0 h- bg-gray-50 relative   bg-cover hover:bg-bottom bg-start  duration-1000 w-96 hover:scale-125 rounded"}  >
+        <div className={" shadow-2xl flex flex-col m-1 rounded  flex-shrink-0  bg-gray-50 relative   bg-cover hover:bg-bottom bg-start  duration-1000 w-96 hover:scale-125 rounded hover:z-20"}  >
             <img src={img} style={{width:"100%"}} />
             <div className="absolute bottom-0 items-center text-center justify-center" style={{ width: "95%" }} >
                 <h1 className="text-slate-50  text-lg ml-2 font-bold "> {props.movieName}</h1>
-                <button className="bg-red-500 ml-2 mb-2 py-1 rounded px-5 text-slate-50  self-center w-full">Play</button>
+                <Link href={{pathname:"/MovieDetails", query:{
+                    movieName:props.movieName, 
+                    movieDescription:props.movieDescription, 
+                    movieVotes:props.movieVotes, 
+                    movieDate:props.movieDate,
+                    movieCover:props.movieCover
+                }}}><button className="bg-red-500 ml-2 mb-2 py-1 rounded px-5 text-slate-50  self-center w-full">Preview</button></Link>
             </div>
         </div>
 

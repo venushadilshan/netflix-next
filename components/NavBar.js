@@ -3,7 +3,7 @@ import { FaSearch, FaBell, FaUserAlt } from "react-icons/fa";
 import {SiNetflix} from "react-icons/si"
 const NavBar = () => {
     return (
-        <nav>
+        <nav className="z-20"> 
             <div className="flex flex-row items-center justify-between w-full px-5 fixed">
                 <div className="flex flex-col">
                     <div className="flex flex-row items-center justify-center p-1">
