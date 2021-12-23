@@ -3,7 +3,7 @@
 
 A clone of Netflix front-end made with NEXT
 
-<img src="https://i.ibb.co/LYXZQ2B/sdfsdfg.jpg" width="500px">
+<img src="https://i.ibb.co/RDfMhz4/sdfsdfg.jpg" width="500px">
 
 How to run, 
 1. Clone the repo
